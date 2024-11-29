@@ -1,36 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 body{
-    background-color: #002147;
+    color: white;
+    background-color: #023064;
+
 }
 
 h1{
     color: #FF2400;
     text-align: center;
+    font-family: "Allura", cursive;
+    letter-spacing: 5px;
+    margin-top: 2%;
+    
 }
 h2{
     background-color: white;
+    text-align: center;
+    color: black;
 
+}
+h3{
+    text-align: center;
+}
+h1,h2{
+    text-transform: uppercase;
 }
 .titulo { 
     background-size: 100%;
     background-clip: text;
-    font-size: 40px; 
+    font-size: 50px; 
     font-weight: bold;
-    background: linear-gradient( 40deg , #1100fd, #ff0000);
+    background: linear-gradient( to right, red,red,red, rgb(255, 1, 242),rgb(255, 1, 242), rgb(255, 1, 242));
         -webkit-background-clip: text; color: transparent;
     
+    
     }
+    
 li{
     font-size: 20px;
 }
+li::marker{
+    color: red;
+}
 p.data{
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid red;
+
 
 }
 
 
 
 img{
-    width: 100px;
+    width: 150px;
     height: 100%;
     border-radius: 10px;
     border: 0.99px solid rgb(255, 0, 0);
