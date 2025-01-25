@@ -1,37 +1,122 @@
-body{
-    background-color: #002147;
+
+
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color: #FF2400;
+body {
+    color: white;
+    background-color: #023064;
+}
+
+header{
+    display: grid;
+
+    h1 {
+        color: #FF2400;
+        text-align: center;
+        font-family: "Allura", cursive;
+        letter-spacing: 0.3125rem ;
+        margin-top: 2%;
+        font-size: 6em;
+    }
+
+    h2{
+        font-size: 1.75em;
+    }
+    
+    
+}
+
+
+h2 {
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    
+}
+
+h3 {
     text-align: center;
 }
-h2{
-    background-color: white;
 
+h1, h2 {
+    text-transform: uppercase;
 }
+
+li::first-letter{
+    text-transform: uppercase;
+}
+
 .titulo { 
     background-size: 100%;
     background-clip: text;
-    font-size: 40px; 
+    font-size: 3.125rem; 
     font-weight: bold;
-    background: linear-gradient( 40deg , #1100fd, #ff0000);
-        -webkit-background-clip: text; color: transparent;
-    
+    background: linear-gradient(to right, red, red, red, rgb(255, 1, 242), rgb(255, 1, 242), rgb(255, 1, 242));
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+li {
+    font-size: 2.5rem;
+}
+section{
+    display: flex;
+    padding: 15px;
+    gap: 10dvh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+li::marker {
+    color: red;
+}
+
+
+
+main.conteiner {
+    display:flex;
+    justify-self: center;
+    border: 0.3125rem solid black;
+    margin-bottom: auto;
+    border-radius: 3%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: black;
+
+    div.slide {
+        display: flex;
+        
+        animation: anima 14s linear infinite;
+        gap: 0.125rem;
     }
-li{
-    font-size: 20px;
-}
-p.data{
-    font-size: 20px;
-
 }
 
-
-
-img{
-    width: 100px;
-    height: 100%;
+p.data {
+    font-size: 1.875rem;
+    text-align: center;
+    border: 2px solid red;
     border-radius: 10px;
-    border: 0.99px solid rgb(255, 0, 0);
 }
+
+img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5625rem;
+    border: 0.0625rem solid rgb(255, 0, 0);
+    
+}
+
+@keyframes anima {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1055%); }
+}
+
+
