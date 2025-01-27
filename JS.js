@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function atualizaData() {
     const dataInicio = new Date('2023-12-24T14:20:00');
     const agora = new Date();
