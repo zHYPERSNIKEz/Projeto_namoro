@@ -5,9 +5,9 @@ function atualizaData() {
     const diferencaTempo = agora - dataInicio;
 
     const anos = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24 * 365.25));
-    const meses = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24 * 30.44));
-    const semanas = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24 * 7));
-    const dias = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24));
+    const meses = Math.floor((diferencaTempo % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+    const semanas = Math.floor((diferencaTempo % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24 * 7));
+    const dias = Math.floor((diferencaTempo % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24));
     const horas = Math.floor((diferencaTempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutos = Math.floor((diferencaTempo % (1000 * 60 * 60)) / (1000 * 60));
     const segundos = Math.floor((diferencaTempo % (1000 * 60)) / 1000);

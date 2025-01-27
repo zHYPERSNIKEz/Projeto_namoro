@@ -1,22 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     color: white;
     background-color: #023064;
 }
 
-h1 {
-    color: #FF2400;
-    text-align: center;
-    font-family: "Allura", cursive;
-    letter-spacing: 5px;
-    margin-top: 2%;
+header{
+    display: grid;
+
+    h1 {
+        color: #FF2400;
+        text-align: center;
+        font-family: "Allura", cursive;
+        letter-spacing: 0.3125rem ;
+        margin-top: 2%;
+        font-size: 6em;
+    }
+
+    h2{
+        font-size: 1.75em;
+    }
+    
+    
 }
+
 
 h2 {
     background-color: white;
     text-align: center;
     color: black;
+    font-size: 2em;
+    
 }
 
 h3 {
@@ -27,10 +47,14 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+li::first-letter{
+    text-transform: uppercase;
+}
+
 .titulo { 
     background-size: 100%;
     background-clip: text;
-    font-size: 50px; 
+    font-size: 3.125rem; 
     font-weight: bold;
     background: linear-gradient(to right, red, red, red, rgb(255, 1, 242), rgb(255, 1, 242), rgb(255, 1, 242));
     -webkit-background-clip: text; 
@@ -38,48 +62,68 @@ h1, h2 {
 }
 
 li {
-    font-size: 20px;
+    font-size: 2.5rem;
+    
 }
+section{
+    display: flex;
+    padding: 15px;
+    gap: 3dvh;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   .part1 li,.part2 li {
+    margin-bottom: 6px;
+        
+    }
 
+}
 li::marker {
     color: red;
 }
 
+
+
+main.conteiner {
+    display:flex;
+    justify-self: center;
+    border: 0.3125rem solid black;
+    margin-bottom: auto;
+    border-radius: 3%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: black;
+
+    div.slide {
+        display: flex;
+        
+        animation: anima 14s linear infinite;
+        gap: 0.125rem;
+    }
+}
+
 p.data {
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     border: 2px solid red;
     border-radius: 10px;
 }
 
-.conteiner {
-    border: 5px solid black;
-    margin-bottom: auto;
-    border-radius: 3%;
-    position: relative;
-    width: 75vw;
-    white-space: nowrap;
-    overflow: hidden;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: black;
-}
-
-.slide {
-    display: flex;
-    animation: anima 30s linear infinite;
-    gap: 2px;
-}
-
 img {
-    width: 30%;
+    display: flex;
+    align-items: center;
+    width: 80%;
     height: auto;
-    border-radius: 25px;
-    border: 1px solid rgb(255, 0, 0);
+    object-fit: cover;
+    border-radius: 1.5625rem;
+    border: 0.0625rem solid rgb(255, 0, 0);
     
 }
 
 @keyframes anima {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-490%); }
+    100% { transform: translateX(-1055%); }
 }
+
+
