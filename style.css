@@ -63,15 +63,10 @@ li::first-letter{
 
 li {
     font-size: 2.5rem;
-<<<<<<< HEAD
-    
-=======
->>>>>>> 63c26d5d2cc7cfae3838b98959d26c2ed50f8cbf
 }
 section{
     display: flex;
     padding: 15px;
-<<<<<<< HEAD
     gap: 3dvh;
     align-items: center;
     justify-content: space-evenly;
@@ -81,7 +76,7 @@ section{
         
     }
 
-=======
+
     gap: 10dvh;
     align-items: center;
     justify-content: space-evenly;
@@ -109,14 +104,10 @@ main.conteiner {
         animation: anima 14s linear infinite;
         gap: 0.125rem;
     }
->>>>>>> 63c26d5d2cc7cfae3838b98959d26c2ed50f8cbf
-}
+
 li::marker {
     color: red;
 }
-
-<<<<<<< HEAD
-
 
 main.conteiner {
     display:flex;
@@ -137,8 +128,7 @@ main.conteiner {
     }
 }
 
-=======
->>>>>>> 63c26d5d2cc7cfae3838b98959d26c2ed50f8cbf
+
 p.data {
     font-size: 1.875rem;
     text-align: center;
