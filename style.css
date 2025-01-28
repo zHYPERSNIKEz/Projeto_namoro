@@ -26,8 +26,6 @@ header{
     h2{
         font-size: 1.75em;
     }
-    
-    
 }
 
 
@@ -63,7 +61,10 @@ li::first-letter{
 
 li {
     font-size: 2.5rem;
+<<<<<<< HEAD
     
+=======
+>>>>>>> da5b2a3c4fdbc0f955db466a2b5805ae6466b25a
 }
 section{
     
@@ -78,6 +79,13 @@ section{
         
     }
 
+<<<<<<< HEAD
+=======
+
+    gap: 10dvh;
+    align-items: center;
+    justify-content: space-evenly;
+>>>>>>> da5b2a3c4fdbc0f955db466a2b5805ae6466b25a
 }
 li::marker {
     color: red;
@@ -102,8 +110,34 @@ main.conteiner {
         animation: anima 14s linear infinite;
         gap: 0.125rem;
     }
+<<<<<<< HEAD
 }
 
+=======
+
+li::marker {
+    color: red;
+}
+
+main.conteiner {
+    display:flex;
+    justify-self: center;
+    border: 0.3125rem solid black;
+    margin-bottom: auto;
+    border-radius: 3%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: black;
+
+    div.slide {
+        display: flex;
+        
+        animation: anima 14s linear infinite;
+        gap: 0.125rem;
+    }
+}
+>>>>>>> da5b2a3c4fdbc0f955db466a2b5805ae6466b25a
 
 
 p.data {
